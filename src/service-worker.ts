@@ -138,7 +138,7 @@ const files = [
      '/applications/Trabajos_en_altura/Trabajos_en_altura.gltf.xz',
      '/applications/Trabajos_en_altura/Trabajos_en_altura.v3d.js',
      '/applications/Trabajos_en_altura/Trabajos_en_altura.visual_logic.js',
-
+     '/applications/Trabajos_en_altura/v3d.js',
      '/applications/Trabajos_en_altura/aluminioSpecular.jpg',
      '/applications/Trabajos_en_altura/amarilloCAT.jpg',
      '/applications/Trabajos_en_altura/AmarilloLCh01.jpg',
