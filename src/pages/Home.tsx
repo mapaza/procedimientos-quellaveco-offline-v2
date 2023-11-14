@@ -7,7 +7,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-    <main>
+   {/*  <main>
   <ul className="cards">
   <li>
     <div className="header">
@@ -54,7 +54,60 @@ const Home: React.FC = () => {
     </Link>
   </li>
   </ul>
-</main>
+</main> */}
+<div className="container">
+  
+  <div className="feature">
+    <div className="item item--1">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Aislamiento y Bloqueo</h2>
+    </div>
+      <img src ="applications/imagenes/aislamiento-menu.png" style={{width: '38vh',
+      padding: '3vh 0 0'}}/>
+    <Link to="/aislamiento-y-bloqueo">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+    <div className="item item--2">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Trabajos en Altura</h2>
+    </div>
+      <img src ="applications/imagenes/altura-menu.png" style={{width: '38vh',
+      padding: '3vh 0 0'}}/>
+    <Link to="/trabajos-en-altura">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+    <div className="item item--3">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Trabajos en Caliente</h2>
+    </div>
+      <img src ="applications/imagenes/caliente-menu.png" style={{width: '38vh',
+      padding: '3vh 0 0'}}/>
+    <Link to="/trabajos-en-caliente">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+    <div className="item item--4">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Trabajos en Espacios Confinados</h2>
+    </div>
+      <img src ="applications/imagenes/espacios-menu.png" style={{width: '38vh',
+      padding: '3vh 0 0'}}/>
+    <Link to="/trabajos-en-espacios-confinados">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+    
+  </div>
+  
+</div>
+
+
 
              {/*   <Link to="/aislamiento-y-bloqueo">
                 <button className="text-sm">Ir a Aislamiento y Bloqueo</button>

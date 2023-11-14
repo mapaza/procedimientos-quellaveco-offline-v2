@@ -4,6 +4,8 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   position: relative;
+  overflow-y: scroll;
+
 `;
 
 export const PoweredBy = styled.img`
