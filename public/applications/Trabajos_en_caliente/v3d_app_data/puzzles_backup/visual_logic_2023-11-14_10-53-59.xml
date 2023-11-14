@@ -341,7 +341,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="216.41936956227414" scrolly="248.2949912152966" scale="0.5582172371174898">
+  <tab name="main" type="CommonTab" active="true" scrollx="18.81945501149289" scrolly="221.09497900826545" scale="0.5582172371174898">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</variable>
       <variable id=",H:kZfvv9|~YNjXy#ofY">selected</variable>
@@ -917,7 +917,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="x4BTft`1#Vqjj1YL]{|K" x="1230" y="-490">
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="x4BTft`1#Vqjj1YL]{|K" x="430" y="-430">
       <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
       <value name="VALUE">
         <block type="logic_boolean" id="tNL5Re#HKdcZee}P/Thc">
@@ -975,152 +975,174 @@
                       <field name="TEXT">info_screen</field>
                     </block>
                   </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=")@Ec@%fHh%5W3_HspS~_" x="1230" y="-270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="tGY^}!54?[xTl-C/17on">
+          <field name="TEXT"></field>
+        </shadow>
+        <block type="text" id="{r|!.kNae|CK$iXZqqD-">
+          <field name="TEXT">btn_cerrar_informacion</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="w,/)De|a!d~afVb-b?ux">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare" id="jO_tB~MB)C0@t^%lePL0">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="g~FQ7{W+W3eyiZzorM15">
+                  <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean" id="Lbcd:Y7OC7@HQERrf6sB">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="variables_set" id="1/yv=}~~%C8pb3Pn7),r">
+              <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
+              <value name="VALUE">
+                <block type="logic_boolean" id=":vtTYBRY:)C(U--P.#za">
+                  <field name="BOOL">FALSE</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id=":k:ozpOY@s;ipEXIy^K2">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="t(:vZ{aWfQ}dMF}AN,rY">
+                      <field name="TEXT">flex</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                      <field name="TEXT"></field>
+                    </shadow>
+                    <block type="text" id="G4#;de?wP(ciRL^xTgHi">
+                      <field name="TEXT">btn_abrir_informacion</field>
+                    </block>
+                  </value>
                   <next>
-                    <block type="setHTMLElemStyle" id="}@gpe97(f}ptHPc/U^Ym">
+                    <block type="setHTMLElemStyle" id="^Wi5K0O.xctr#~1xWpCu">
                       <field name="PROPERTY">display</field>
-                      <field name="PARENT">TRUE</field>
+                      <field name="PARENT">FALSE</field>
                       <value name="VALUE">
-                        <block type="text" id="qC2-,C;k:2n_bo]n;osy">
+                        <block type="text" id="hIxDE1kIK_VhD6}S{Pi;">
                           <field name="TEXT">none</field>
                         </block>
                       </value>
                       <value name="ID">
-                        <shadow type="text" id=",vDV.?L:0pPd.E]Yji94">
+                        <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
                           <field name="TEXT"></field>
                         </shadow>
-                        <block type="text" id="7je_;Pk{z#IlCZ}pl#Oz">
-                          <field name="TEXT">btn-volver-menu</field>
-                        </block>
-                      </value>
-                    </block>
-                  </next>
-                </block>
-              </statement>
-              <next>
-                <block type="eventHTMLElem" id=")@Ec@%fHh%5W3_HspS~_">
-                  <field name="EVENT">click</field>
-                  <field name="PARENT">FALSE</field>
-                  <value name="ID">
-                    <shadow type="text" id="tGY^}!54?[xTl-C/17on">
-                      <field name="TEXT"></field>
-                    </shadow>
-                    <block type="text" id="{r|!.kNae|CK$iXZqqD-">
-                      <field name="TEXT">btn_cerrar_informacion</field>
-                    </block>
-                  </value>
-                  <statement name="DO">
-                    <block type="setHTMLElemStyle" id="G]f,I-E0rGwm[izpma)v">
-                      <field name="PROPERTY">display</field>
-                      <field name="PARENT">TRUE</field>
-                      <value name="VALUE">
-                        <block type="text" id="=t6unmYgc:!r|$Ex%Q+)">
-                          <field name="TEXT">flex</field>
-                        </block>
-                      </value>
-                      <value name="ID">
-                        <shadow type="text" id=",vDV.?L:0pPd.E]Yji94">
-                          <field name="TEXT"></field>
-                        </shadow>
-                        <block type="text" id="kNPutEn9=[nvledzj9;r">
-                          <field name="TEXT">btn-volver-menu</field>
+                        <block type="text" id="dPC3lwlIqb=]qe!WcrnR">
+                          <field name="TEXT">info_screen</field>
                         </block>
                       </value>
                       <next>
-                        <block type="controls_if" id="w,/)De|a!d~afVb-b?ux">
-                          <mutation else="1"></mutation>
-                          <value name="IF0">
-                            <block type="logic_compare" id="jO_tB~MB)C0@t^%lePL0">
-                              <field name="OP">EQ</field>
-                              <value name="A">
-                                <block type="variables_get" id="g~FQ7{W+W3eyiZzorM15">
-                                  <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
-                                </block>
-                              </value>
-                              <value name="B">
-                                <block type="logic_boolean" id="Lbcd:Y7OC7@HQERrf6sB">
-                                  <field name="BOOL">TRUE</field>
-                                </block>
-                              </value>
+                        <block type="setHTMLElemStyle" id="}_b^7,,X%`V2DNSFUkf.">
+                          <field name="PROPERTY">display</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <block type="text" id="qvi%3L-G]hOlpTl%])}*">
+                              <field name="TEXT">none</field>
                             </block>
                           </value>
-                          <statement name="DO0">
-                            <block type="variables_set" id="1/yv=}~~%C8pb3Pn7),r">
-                              <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
+                          <value name="ID">
+                            <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
+                              <field name="TEXT"></field>
+                            </shadow>
+                            <block type="text" id="NdNRI4)sghdo9tluI~rw">
+                              <field name="TEXT">info_screen</field>
+                            </block>
+                          </value>
+                          <next>
+                            <block type="playSound" id="s*Inq?4~;5lASTeSXZ6B">
+                              <field name="LOOP">FALSE</field>
                               <value name="VALUE">
-                                <block type="logic_boolean" id=":vtTYBRY:)C(U--P.#za">
-                                  <field name="BOOL">FALSE</field>
+                                <block type="loadSoundAdv" id=".Y+|[DWTd2}g0]P_)/1M">
+                                  <field name="TYPE">MUSIC</field>
+                                  <value name="URL">
+                                    <shadow type="text" id="PXx0kz^2j|*-XP5[V*`#">
+                                      <field name="TEXT">./audios/nota_inicio.mp3</field>
+                                    </shadow>
+                                  </value>
                                 </block>
                               </value>
                               <next>
-                                <block type="setHTMLElemStyle" id=":k:ozpOY@s;ipEXIy^K2">
+                                <block type="setHTMLElemStyle" id="#e][ln.N$Bz%dvCjw3G_">
                                   <field name="PROPERTY">display</field>
                                   <field name="PARENT">FALSE</field>
                                   <value name="VALUE">
-                                    <block type="text" id="t(:vZ{aWfQ}dMF}AN,rY">
+                                    <block type="text" id="R~$IY/s_c`duFcc=a7No">
                                       <field name="TEXT">flex</field>
                                     </block>
                                   </value>
                                   <value name="ID">
-                                    <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                                    <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
                                       <field name="TEXT"></field>
                                     </shadow>
-                                    <block type="text" id="G4#;de?wP(ciRL^xTgHi">
-                                      <field name="TEXT">btn_abrir_informacion</field>
+                                    <block type="text" id="nVZR#5!yO#},?Z[W64i)">
+                                      <field name="TEXT">nota_inicio</field>
                                     </block>
                                   </value>
                                   <next>
-                                    <block type="setHTMLElemStyle" id="^Wi5K0O.xctr#~1xWpCu">
-                                      <field name="PROPERTY">display</field>
-                                      <field name="PARENT">FALSE</field>
+                                    <block type="playSound" id="N.xm#_%om78hd$WlA6HV">
+                                      <field name="LOOP">TRUE</field>
                                       <value name="VALUE">
-                                        <block type="text" id="hIxDE1kIK_VhD6}S{Pi;">
-                                          <field name="TEXT">none</field>
-                                        </block>
-                                      </value>
-                                      <value name="ID">
-                                        <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
-                                          <field name="TEXT"></field>
-                                        </shadow>
-                                        <block type="text" id="dPC3lwlIqb=]qe!WcrnR">
-                                          <field name="TEXT">info_screen</field>
+                                        <block type="loadSoundAdv" id="A%Xi#$%1bxlRcNnVi5dc">
+                                          <field name="TYPE">MUSIC</field>
+                                          <value name="URL">
+                                            <shadow type="text" id="w`G.[`OHW{Kc]Y.HV+Pz">
+                                              <field name="TEXT">../audios/Feeder.mp3</field>
+                                            </shadow>
+                                          </value>
                                         </block>
                                       </value>
                                       <next>
-                                        <block type="setHTMLElemStyle" id="}_b^7,,X%`V2DNSFUkf.">
-                                          <field name="PROPERTY">display</field>
-                                          <field name="PARENT">FALSE</field>
+                                        <block type="volume" id="xC;{RzLz;*a9WQyV18[~">
                                           <value name="VALUE">
-                                            <block type="text" id="qvi%3L-G]hOlpTl%])}*">
-                                              <field name="TEXT">none</field>
+                                            <block type="loadSoundAdv" id="sM$yZq).dd,7DL/%mD*R">
+                                              <field name="TYPE">MUSIC</field>
+                                              <value name="URL">
+                                                <shadow type="text" id="1^~l)9pc$fSuLS^V_m~F">
+                                                  <field name="TEXT">../audios/Feeder.mp3</field>
+                                                </shadow>
+                                              </value>
                                             </block>
                                           </value>
-                                          <value name="ID">
-                                            <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
-                                              <field name="TEXT"></field>
+                                          <value name="VOLUME">
+                                            <shadow type="math_number" id="UZtu-tXr_yK]j#6bf8)V">
+                                              <field name="NUM">0.03</field>
                                             </shadow>
-                                            <block type="text" id="NdNRI4)sghdo9tluI~rw">
-                                              <field name="TEXT">info_screen</field>
-                                            </block>
                                           </value>
                                           <next>
-                                            <block type="playSound" id="s*Inq?4~;5lASTeSXZ6B">
-                                              <field name="LOOP">FALSE</field>
+                                            <block type="setTimeout" id="l5e@z*,@$2H--]5-jpnC">
                                               <value name="VALUE">
-                                                <block type="loadSoundAdv" id=".Y+|[DWTd2}g0]P_)/1M">
-                                                  <field name="TYPE">MUSIC</field>
-                                                  <value name="URL">
-                                                    <shadow type="text" id="PXx0kz^2j|*-XP5[V*`#">
-                                                      <field name="TEXT">./audios/nota_inicio.mp3</field>
-                                                    </shadow>
-                                                  </value>
-                                                </block>
+                                                <shadow type="math_number" id="E%uyxEpp(?bEziv/uP@n">
+                                                  <field name="NUM">5</field>
+                                                </shadow>
                                               </value>
-                                              <next>
-                                                <block type="setHTMLElemStyle" id="#e][ln.N$Bz%dvCjw3G_">
+                                              <statement name="DO">
+                                                <block type="setHTMLElemStyle" id="ukEkmie0*9!v0~hq5lMs">
                                                   <field name="PROPERTY">display</field>
                                                   <field name="PARENT">FALSE</field>
                                                   <value name="VALUE">
-                                                    <block type="text" id="R~$IY/s_c`duFcc=a7No">
+                                                    <block type="text" id="?nPUe/Y?qdVwdmTl3CYt">
                                                       <field name="TEXT">flex</field>
                                                     </block>
                                                   </value>
@@ -1128,74 +1150,12 @@
                                                     <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
                                                       <field name="TEXT"></field>
                                                     </shadow>
-                                                    <block type="text" id="nVZR#5!yO#},?Z[W64i)">
-                                                      <field name="TEXT">nota_inicio</field>
+                                                    <block type="text" id="%Of*$PqOR?af:(/T=Ix^">
+                                                      <field name="TEXT">btn_next_inicio</field>
                                                     </block>
                                                   </value>
-                                                  <next>
-                                                    <block type="playSound" id="N.xm#_%om78hd$WlA6HV">
-                                                      <field name="LOOP">TRUE</field>
-                                                      <value name="VALUE">
-                                                        <block type="loadSoundAdv" id="A%Xi#$%1bxlRcNnVi5dc">
-                                                          <field name="TYPE">MUSIC</field>
-                                                          <value name="URL">
-                                                            <shadow type="text" id="w`G.[`OHW{Kc]Y.HV+Pz">
-                                                              <field name="TEXT">../audios/Feeder.mp3</field>
-                                                            </shadow>
-                                                          </value>
-                                                        </block>
-                                                      </value>
-                                                      <next>
-                                                        <block type="volume" id="xC;{RzLz;*a9WQyV18[~">
-                                                          <value name="VALUE">
-                                                            <block type="loadSoundAdv" id="sM$yZq).dd,7DL/%mD*R">
-                                                              <field name="TYPE">MUSIC</field>
-                                                              <value name="URL">
-                                                                <shadow type="text" id="1^~l)9pc$fSuLS^V_m~F">
-                                                                  <field name="TEXT">../audios/Feeder.mp3</field>
-                                                                </shadow>
-                                                              </value>
-                                                            </block>
-                                                          </value>
-                                                          <value name="VOLUME">
-                                                            <shadow type="math_number" id="UZtu-tXr_yK]j#6bf8)V">
-                                                              <field name="NUM">0.03</field>
-                                                            </shadow>
-                                                          </value>
-                                                          <next>
-                                                            <block type="setTimeout" id="l5e@z*,@$2H--]5-jpnC">
-                                                              <value name="VALUE">
-                                                                <shadow type="math_number" id="E%uyxEpp(?bEziv/uP@n">
-                                                                  <field name="NUM">5</field>
-                                                                </shadow>
-                                                              </value>
-                                                              <statement name="DO">
-                                                                <block type="setHTMLElemStyle" id="ukEkmie0*9!v0~hq5lMs">
-                                                                  <field name="PROPERTY">display</field>
-                                                                  <field name="PARENT">FALSE</field>
-                                                                  <value name="VALUE">
-                                                                    <block type="text" id="?nPUe/Y?qdVwdmTl3CYt">
-                                                                      <field name="TEXT">flex</field>
-                                                                    </block>
-                                                                  </value>
-                                                                  <value name="ID">
-                                                                    <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
-                                                                      <field name="TEXT"></field>
-                                                                    </shadow>
-                                                                    <block type="text" id="%Of*$PqOR?af:(/T=Ix^">
-                                                                      <field name="TEXT">btn_next_inicio</field>
-                                                                    </block>
-                                                                  </value>
-                                                                </block>
-                                                              </statement>
-                                                            </block>
-                                                          </next>
-                                                        </block>
-                                                      </next>
-                                                    </block>
-                                                  </next>
                                                 </block>
-                                              </next>
+                                              </statement>
                                             </block>
                                           </next>
                                         </block>
@@ -1205,55 +1165,55 @@
                                 </block>
                               </next>
                             </block>
-                          </statement>
-                          <statement name="ELSE">
-                            <block type="setHTMLElemStyle" id="X|Y:*w$5_saL$KLzffqp">
-                              <field name="PROPERTY">display</field>
-                              <field name="PARENT">FALSE</field>
-                              <value name="VALUE">
-                                <block type="text" id="IQ-R=|x@w~:{DNzs=Cat">
-                                  <field name="TEXT">flex</field>
-                                </block>
-                              </value>
-                              <value name="ID">
-                                <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
-                                  <field name="TEXT"></field>
-                                </shadow>
-                                <block type="text" id="-e1Z;*ob:4[%*fo+(Wdq">
-                                  <field name="TEXT">btn_abrir_informacion</field>
-                                </block>
-                              </value>
-                              <next>
-                                <block type="setHTMLElemStyle" id="zh.o!3[?MB=;8p$Pfq[r">
-                                  <field name="PROPERTY">display</field>
-                                  <field name="PARENT">FALSE</field>
-                                  <value name="VALUE">
-                                    <block type="text" id="07!PjSki)pnH^1t]BLGP">
-                                      <field name="TEXT">none</field>
-                                    </block>
-                                  </value>
-                                  <value name="ID">
-                                    <shadow type="text" id="yJ|BJ4kzrp#VX$k/T(nK">
-                                      <field name="TEXT"></field>
-                                    </shadow>
-                                    <block type="text" id="bF{lt-TMR?0/7;FLU;CX">
-                                      <field name="TEXT">info_screen</field>
-                                    </block>
-                                  </value>
-                                </block>
-                              </next>
-                            </block>
-                          </statement>
+                          </next>
                         </block>
                       </next>
                     </block>
-                  </statement>
+                  </next>
                 </block>
               </next>
             </block>
-          </next>
+          </statement>
+          <statement name="ELSE">
+            <block type="setHTMLElemStyle" id="X|Y:*w$5_saL$KLzffqp">
+              <field name="PROPERTY">display</field>
+              <field name="PARENT">FALSE</field>
+              <value name="VALUE">
+                <block type="text" id="IQ-R=|x@w~:{DNzs=Cat">
+                  <field name="TEXT">flex</field>
+                </block>
+              </value>
+              <value name="ID">
+                <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                  <field name="TEXT"></field>
+                </shadow>
+                <block type="text" id="-e1Z;*ob:4[%*fo+(Wdq">
+                  <field name="TEXT">btn_abrir_informacion</field>
+                </block>
+              </value>
+              <next>
+                <block type="setHTMLElemStyle" id="zh.o!3[?MB=;8p$Pfq[r">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="07!PjSki)pnH^1t]BLGP">
+                      <field name="TEXT">none</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="yJ|BJ4kzrp#VX$k/T(nK">
+                      <field name="TEXT"></field>
+                    </shadow>
+                    <block type="text" id="bF{lt-TMR?0/7;FLU;CX">
+                      <field name="TEXT">info_screen</field>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
         </block>
-      </next>
+      </statement>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="tweenCameraExt" id="J=FsRc.J(A%P6m.?F@]`" disabled="true" x="3930" y="-390">
       <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
@@ -1375,25 +1335,6 @@
               <field name="TEXT">info_screen_mobile</field>
             </block>
           </value>
-          <next>
-            <block type="setHTMLElemStyle" id="*W2np-VsbIals$m34Zl?">
-              <field name="PROPERTY">display</field>
-              <field name="PARENT">TRUE</field>
-              <value name="VALUE">
-                <block type="text" id="C)Fk346_I62SOraWGir~">
-                  <field name="TEXT">none</field>
-                </block>
-              </value>
-              <value name="ID">
-                <shadow type="text" id=",vDV.?L:0pPd.E]Yji94">
-                  <field name="TEXT"></field>
-                </shadow>
-                <block type="text" id=":5c*MQ;%{JF]}K!8blm/">
-                  <field name="TEXT">btn-volver-menu</field>
-                </block>
-              </value>
-            </block>
-          </next>
         </block>
       </statement>
       <next>
@@ -1409,71 +1350,71 @@
             </block>
           </value>
           <statement name="DO">
-            <block type="setHTMLElemStyle" id="ZLCEOHvADt{Si/BhG*-S">
-              <field name="PROPERTY">display</field>
-              <field name="PARENT">TRUE</field>
-              <value name="VALUE">
-                <block type="text" id="@fvBY(wF}R9Cl{oSk[0B">
-                  <field name="TEXT">flex</field>
-                </block>
-              </value>
-              <value name="ID">
-                <shadow type="text" id=",vDV.?L:0pPd.E]Yji94">
-                  <field name="TEXT"></field>
-                </shadow>
-                <block type="text" id="v{8Xh^}_F.c{p1+]fTr(">
-                  <field name="TEXT">btn-volver-menu</field>
-                </block>
-              </value>
-              <next>
-                <block type="controls_if" id="Tgfx`Og~*y3{(9(jzf$}">
-                  <mutation else="1"></mutation>
-                  <value name="IF0">
-                    <block type="logic_compare" id="A#Z#gZ:mO-hKPFKJvq).">
-                      <field name="OP">EQ</field>
-                      <value name="A">
-                        <block type="variables_get" id="QB_hSr*Jklcw}]bIz(-X">
-                          <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
-                        </block>
-                      </value>
-                      <value name="B">
-                        <block type="logic_boolean" id="BCDLOum6GI,_{A%=mVBq">
-                          <field name="BOOL">TRUE</field>
-                        </block>
-                      </value>
+            <block type="controls_if" id="Tgfx`Og~*y3{(9(jzf$}">
+              <mutation else="1"></mutation>
+              <value name="IF0">
+                <block type="logic_compare" id="A#Z#gZ:mO-hKPFKJvq).">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="QB_hSr*Jklcw}]bIz(-X">
+                      <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
                     </block>
                   </value>
-                  <statement name="DO0">
-                    <block type="variables_set" id="ai2g$:(K*QDW$F/3TB.I">
-                      <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
+                  <value name="B">
+                    <block type="logic_boolean" id="BCDLOum6GI,_{A%=mVBq">
+                      <field name="BOOL">TRUE</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="variables_set" id="ai2g$:(K*QDW$F/3TB.I">
+                  <field name="VAR" id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</field>
+                  <value name="VALUE">
+                    <block type="logic_boolean" id=")b%GWPY9BL64*x}R#C2t">
+                      <field name="BOOL">FALSE</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="F_L+RFGQr;?*{$!,l|Ol">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
                       <value name="VALUE">
-                        <block type="logic_boolean" id=")b%GWPY9BL64*x}R#C2t">
-                          <field name="BOOL">FALSE</field>
+                        <block type="text" id="54%O{K^%id-q*#ZZ5d;k">
+                          <field name="TEXT">flex</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                          <field name="TEXT"></field>
+                        </shadow>
+                        <block type="text" id="_$!h@)RG~+uveWKDHbFQ">
+                          <field name="TEXT">btn_abrir_informacion_mobile</field>
                         </block>
                       </value>
                       <next>
-                        <block type="setHTMLElemStyle" id="F_L+RFGQr;?*{$!,l|Ol">
+                        <block type="setHTMLElemStyle" id="`YGBD?DkSOj$PEty`Ai_">
                           <field name="PROPERTY">display</field>
                           <field name="PARENT">FALSE</field>
                           <value name="VALUE">
-                            <block type="text" id="54%O{K^%id-q*#ZZ5d;k">
-                              <field name="TEXT">flex</field>
+                            <block type="text" id="FBGPa|[ki4UO!rC`3!:z">
+                              <field name="TEXT">none</field>
                             </block>
                           </value>
                           <value name="ID">
-                            <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                            <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
                               <field name="TEXT"></field>
                             </shadow>
-                            <block type="text" id="_$!h@)RG~+uveWKDHbFQ">
-                              <field name="TEXT">btn_abrir_informacion_mobile</field>
+                            <block type="text" id="(RtUZ[XYL#yZ%MHeX^fd">
+                              <field name="TEXT">info_screen_mobile</field>
                             </block>
                           </value>
                           <next>
-                            <block type="setHTMLElemStyle" id="`YGBD?DkSOj$PEty`Ai_">
+                            <block type="setHTMLElemStyle" id="TEKe+^LA7oosQPs.(ws@">
                               <field name="PROPERTY">display</field>
                               <field name="PARENT">FALSE</field>
                               <value name="VALUE">
-                                <block type="text" id="FBGPa|[ki4UO!rC`3!:z">
+                                <block type="text" id="w{O|}sc(B)j[AdQIS?h-">
                                   <field name="TEXT">none</field>
                                 </block>
                               </value>
@@ -1481,115 +1422,96 @@
                                 <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
                                   <field name="TEXT"></field>
                                 </shadow>
-                                <block type="text" id="(RtUZ[XYL#yZ%MHeX^fd">
+                                <block type="text" id="mj5JSsM0pXxA|M9SMeIE">
                                   <field name="TEXT">info_screen_mobile</field>
                                 </block>
                               </value>
                               <next>
-                                <block type="setHTMLElemStyle" id="TEKe+^LA7oosQPs.(ws@">
-                                  <field name="PROPERTY">display</field>
-                                  <field name="PARENT">FALSE</field>
+                                <block type="playSound" id="tTh%^U7RaWz:OW!3.SAj">
+                                  <field name="LOOP">FALSE</field>
                                   <value name="VALUE">
-                                    <block type="text" id="w{O|}sc(B)j[AdQIS?h-">
-                                      <field name="TEXT">none</field>
-                                    </block>
-                                  </value>
-                                  <value name="ID">
-                                    <shadow type="text" id="KK_^#znnh6QpRRsH,b32">
-                                      <field name="TEXT"></field>
-                                    </shadow>
-                                    <block type="text" id="mj5JSsM0pXxA|M9SMeIE">
-                                      <field name="TEXT">info_screen_mobile</field>
+                                    <block type="loadSoundAdv" id="WqWs}2sjo{H9^ZRIR}r(">
+                                      <field name="TYPE">MUSIC</field>
+                                      <value name="URL">
+                                        <shadow type="text" id="-8z.aJVT!tpW;Q1xxN7.">
+                                          <field name="TEXT">./audios/nota_inicio.mp3</field>
+                                        </shadow>
+                                      </value>
                                     </block>
                                   </value>
                                   <next>
-                                    <block type="playSound" id="tTh%^U7RaWz:OW!3.SAj">
-                                      <field name="LOOP">FALSE</field>
+                                    <block type="setHTMLElemStyle" id="x1+gIZRzZ$7weL)Zv99J">
+                                      <field name="PROPERTY">display</field>
+                                      <field name="PARENT">FALSE</field>
                                       <value name="VALUE">
-                                        <block type="loadSoundAdv" id="WqWs}2sjo{H9^ZRIR}r(">
-                                          <field name="TYPE">MUSIC</field>
-                                          <value name="URL">
-                                            <shadow type="text" id="-8z.aJVT!tpW;Q1xxN7.">
-                                              <field name="TEXT">./audios/nota_inicio.mp3</field>
-                                            </shadow>
-                                          </value>
+                                        <block type="text" id="l+HzDAKDFz]sC%ZB[JqN">
+                                          <field name="TEXT">flex</field>
+                                        </block>
+                                      </value>
+                                      <value name="ID">
+                                        <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
+                                          <field name="TEXT"></field>
+                                        </shadow>
+                                        <block type="text" id="lXU;NY)y%c`1`FzCxy[l">
+                                          <field name="TEXT">nota_inicio</field>
                                         </block>
                                       </value>
                                       <next>
-                                        <block type="setHTMLElemStyle" id="x1+gIZRzZ$7weL)Zv99J">
-                                          <field name="PROPERTY">display</field>
-                                          <field name="PARENT">FALSE</field>
+                                        <block type="playSound" id="EuC1A2M-OECA7Y)z5iz5">
+                                          <field name="LOOP">TRUE</field>
                                           <value name="VALUE">
-                                            <block type="text" id="l+HzDAKDFz]sC%ZB[JqN">
-                                              <field name="TEXT">flex</field>
-                                            </block>
-                                          </value>
-                                          <value name="ID">
-                                            <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
-                                              <field name="TEXT"></field>
-                                            </shadow>
-                                            <block type="text" id="lXU;NY)y%c`1`FzCxy[l">
-                                              <field name="TEXT">nota_inicio</field>
+                                            <block type="loadSoundAdv" id="KUEU;i0?0@{%QeT/OpY7">
+                                              <field name="TYPE">MUSIC</field>
+                                              <value name="URL">
+                                                <shadow type="text" id="d{xfy2WbuUw^_3WeZBjd">
+                                                  <field name="TEXT">../audios/Feeder.mp3</field>
+                                                </shadow>
+                                              </value>
                                             </block>
                                           </value>
                                           <next>
-                                            <block type="playSound" id="EuC1A2M-OECA7Y)z5iz5">
-                                              <field name="LOOP">TRUE</field>
+                                            <block type="volume" id="%@Yx(1STR5Z6LYRMxeG6">
                                               <value name="VALUE">
-                                                <block type="loadSoundAdv" id="KUEU;i0?0@{%QeT/OpY7">
+                                                <block type="loadSoundAdv" id="1|Pcuv|8BA9k/lf7E5ML">
                                                   <field name="TYPE">MUSIC</field>
                                                   <value name="URL">
-                                                    <shadow type="text" id="d{xfy2WbuUw^_3WeZBjd">
+                                                    <shadow type="text" id="$ZlRl{vt907[e2iQo=5J">
                                                       <field name="TEXT">../audios/Feeder.mp3</field>
                                                     </shadow>
                                                   </value>
                                                 </block>
                                               </value>
+                                              <value name="VOLUME">
+                                                <shadow type="math_number" id="sh{S=kJ.ZU;kR8TWJZ(%">
+                                                  <field name="NUM">0.03</field>
+                                                </shadow>
+                                              </value>
                                               <next>
-                                                <block type="volume" id="%@Yx(1STR5Z6LYRMxeG6">
+                                                <block type="setTimeout" id="pH,/:-L=q+mdI!+-)u3I">
                                                   <value name="VALUE">
-                                                    <block type="loadSoundAdv" id="1|Pcuv|8BA9k/lf7E5ML">
-                                                      <field name="TYPE">MUSIC</field>
-                                                      <value name="URL">
-                                                        <shadow type="text" id="$ZlRl{vt907[e2iQo=5J">
-                                                          <field name="TEXT">../audios/Feeder.mp3</field>
-                                                        </shadow>
-                                                      </value>
-                                                    </block>
-                                                  </value>
-                                                  <value name="VOLUME">
-                                                    <shadow type="math_number" id="sh{S=kJ.ZU;kR8TWJZ(%">
-                                                      <field name="NUM">0.03</field>
+                                                    <shadow type="math_number" id="WAH%aSs)4t+e/@sMz9,+">
+                                                      <field name="NUM">5</field>
                                                     </shadow>
                                                   </value>
-                                                  <next>
-                                                    <block type="setTimeout" id="pH,/:-L=q+mdI!+-)u3I">
+                                                  <statement name="DO">
+                                                    <block type="setHTMLElemStyle" id="r?DquEP4;3IcFX6|4UO-">
+                                                      <field name="PROPERTY">display</field>
+                                                      <field name="PARENT">FALSE</field>
                                                       <value name="VALUE">
-                                                        <shadow type="math_number" id="WAH%aSs)4t+e/@sMz9,+">
-                                                          <field name="NUM">5</field>
-                                                        </shadow>
-                                                      </value>
-                                                      <statement name="DO">
-                                                        <block type="setHTMLElemStyle" id="r?DquEP4;3IcFX6|4UO-">
-                                                          <field name="PROPERTY">display</field>
-                                                          <field name="PARENT">FALSE</field>
-                                                          <value name="VALUE">
-                                                            <block type="text" id="g9x}]D|LIFD1t@(izr.d">
-                                                              <field name="TEXT">flex</field>
-                                                            </block>
-                                                          </value>
-                                                          <value name="ID">
-                                                            <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
-                                                              <field name="TEXT"></field>
-                                                            </shadow>
-                                                            <block type="text" id="eS]WUG]|TS-)9)jsF|x!">
-                                                              <field name="TEXT">btn_next_inicio</field>
-                                                            </block>
-                                                          </value>
+                                                        <block type="text" id="g9x}]D|LIFD1t@(izr.d">
+                                                          <field name="TEXT">flex</field>
                                                         </block>
-                                                      </statement>
+                                                      </value>
+                                                      <value name="ID">
+                                                        <shadow type="text" id="yLj6e!QVr7HL-?5h+3e~">
+                                                          <field name="TEXT"></field>
+                                                        </shadow>
+                                                        <block type="text" id="eS]WUG]|TS-)9)jsF|x!">
+                                                          <field name="TEXT">btn_next_inicio</field>
+                                                        </block>
+                                                      </value>
                                                     </block>
-                                                  </next>
+                                                  </statement>
                                                 </block>
                                               </next>
                                             </block>
@@ -1605,47 +1527,47 @@
                         </block>
                       </next>
                     </block>
-                  </statement>
-                  <statement name="ELSE">
-                    <block type="setHTMLElemStyle" id="1a#=[YhOF87MX:9c}j2I">
+                  </next>
+                </block>
+              </statement>
+              <statement name="ELSE">
+                <block type="setHTMLElemStyle" id="1a#=[YhOF87MX:9c}j2I">
+                  <field name="PROPERTY">display</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="VALUE">
+                    <block type="text" id="vfc;yf.arH@AV{gbD/@I">
+                      <field name="TEXT">flex</field>
+                    </block>
+                  </value>
+                  <value name="ID">
+                    <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                      <field name="TEXT"></field>
+                    </shadow>
+                    <block type="text" id="g0G#*1.*D=o;%z#p-[0p">
+                      <field name="TEXT">btn_abrir_informacion_mobile</field>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="setHTMLElemStyle" id="ru~7!naeQ~ghT+X-O#M[">
                       <field name="PROPERTY">display</field>
                       <field name="PARENT">FALSE</field>
                       <value name="VALUE">
-                        <block type="text" id="vfc;yf.arH@AV{gbD/@I">
-                          <field name="TEXT">flex</field>
+                        <block type="text" id="fzyj~5Cu)}o5ru1C!S-7">
+                          <field name="TEXT">none</field>
                         </block>
                       </value>
                       <value name="ID">
-                        <shadow type="text" id="fLm9kL!$C3:CQJ(QJ!S0">
+                        <shadow type="text" id="yJ|BJ4kzrp#VX$k/T(nK">
                           <field name="TEXT"></field>
                         </shadow>
-                        <block type="text" id="g0G#*1.*D=o;%z#p-[0p">
-                          <field name="TEXT">btn_abrir_informacion_mobile</field>
+                        <block type="text" id="d]Di9MO;r%J)![n0E(O,">
+                          <field name="TEXT">info_screen_mobile</field>
                         </block>
                       </value>
-                      <next>
-                        <block type="setHTMLElemStyle" id="ru~7!naeQ~ghT+X-O#M[">
-                          <field name="PROPERTY">display</field>
-                          <field name="PARENT">FALSE</field>
-                          <value name="VALUE">
-                            <block type="text" id="fzyj~5Cu)}o5ru1C!S-7">
-                              <field name="TEXT">none</field>
-                            </block>
-                          </value>
-                          <value name="ID">
-                            <shadow type="text" id="yJ|BJ4kzrp#VX$k/T(nK">
-                              <field name="TEXT"></field>
-                            </shadow>
-                            <block type="text" id="d]Di9MO;r%J)![n0E(O,">
-                              <field name="TEXT">info_screen_mobile</field>
-                            </block>
-                          </value>
-                        </block>
-                      </next>
                     </block>
-                  </statement>
+                  </next>
                 </block>
-              </next>
+              </statement>
             </block>
           </statement>
         </block>
@@ -4109,7 +4031,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="tweenCameraExt" id="U7^PWtr8;`yr9%6/)TAd" x="1298" y="445">
+    <block xmlns="https://developers.google.com/blockly/xml" type="tweenCameraExt" id="U7^PWtr8;`yr9%6/)TAd" x="1250" y="430">
       <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
       <field name="MOVEMENT_TYPE">LINEAR</field>
       <value name="POSITION">

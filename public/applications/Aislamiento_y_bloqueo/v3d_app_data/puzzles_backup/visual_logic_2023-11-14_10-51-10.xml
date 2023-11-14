@@ -225,7 +225,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="361.4188770818123" scrolly="135.13314902113189" scale="0.5568374181775592">
+  <tab name="main" type="CommonTab" active="true" scrollx="337.4188770818123" scrolly="134.33311545179595" scale="0.5568374181775592">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</variable>
       <variable id="I~z3=:f+DX3=}EYO41iY">is_press_red_button_apronfeeder</variable>
@@ -780,25 +780,6 @@
                       <field name="TEXT">info_screen</field>
                     </block>
                   </value>
-                  <next>
-                    <block type="setHTMLElemStyle" id="C9^.~9[?c?YC{CJ-/f,Z">
-                      <field name="PROPERTY">display</field>
-                      <field name="PARENT">TRUE</field>
-                      <value name="VALUE">
-                        <block type="text" id="9%`vLuyO;ej-9phHUZID">
-                          <field name="TEXT">none</field>
-                        </block>
-                      </value>
-                      <value name="ID">
-                        <shadow type="text" id="^sJ2IvBodCagWb~LJG-l">
-                          <field name="TEXT"></field>
-                        </shadow>
-                        <block type="text" id="`)@Bet:F,{quO6Zb,@,p">
-                          <field name="TEXT">btn-volver-menu</field>
-                        </block>
-                      </value>
-                    </block>
-                  </next>
                 </block>
               </statement>
               <next>
@@ -1180,25 +1161,6 @@
               <field name="TEXT">info_screen_mobile</field>
             </block>
           </value>
-          <next>
-            <block type="setHTMLElemStyle" id="1IM$2hXZJCyB8*f$~SlG">
-              <field name="PROPERTY">display</field>
-              <field name="PARENT">TRUE</field>
-              <value name="VALUE">
-                <block type="text" id="R4lXCDM2[P!(ss3~5i1+">
-                  <field name="TEXT">none</field>
-                </block>
-              </value>
-              <value name="ID">
-                <shadow type="text" id="^sJ2IvBodCagWb~LJG-l">
-                  <field name="TEXT"></field>
-                </shadow>
-                <block type="text" id="xIyApNE6l*Znt+boP=Q;">
-                  <field name="TEXT">btn-volver-menu</field>
-                </block>
-              </value>
-            </block>
-          </next>
         </block>
       </statement>
       <next>

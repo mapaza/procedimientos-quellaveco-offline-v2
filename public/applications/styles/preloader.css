@@ -110,19 +110,7 @@ width: 43vh;
 
 /* titulo header */
 
-.container-titulo-procedimiento {
-max-width: none;
-height: auto;
-margin: 0 auto;
-padding: 0vh 2vh;
-text-align: center;
-background: #031795bd;
-position: absolute;
-left: 5vh;
-top: 5vh;
-font-family: 'Roboto', sans-serif;
-color: #fff;
-}
+.container-titulo-procedimiento {max-width: none;height: auto;margin: 0 auto;padding: 0vh 2vh;text-align: center;background: #031795bd;position: absolute;left: 15vh;top: 5vh;font-family: 'Roboto', sans-serif;color: #fff;}
 
 /* ----------------- */
 /* Sixth */

@@ -1,0 +1,126 @@
+
+:root {
+    --gray-900: #121214;
+    --gray-300: #444448;
+  
+    --primary-200: #fcd085;
+    --primary-400: #ffbc48;
+    font-size: 62.5%;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+  }
+  
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  header input {
+    margin-top: 2rem;
+    padding: 1rem 1.6rem;
+    border-radius: 0.8rem;
+  
+    background-color: #444448;
+    border: 0;
+  
+    width: 100%;
+    color: white;
+  
+    font-size: 1.6rem;
+  }
+  
+  .input-wrapper i {
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.2rem;
+  }
+  
+  main {
+    padding-inline: 1.2rem;
+    max-width: 60vw;
+    margin: 5vh auto;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    list-style: none;
+    /* width: 57vw; */
+  }
+  
+  ul:has(li:hover) li:not(:hover) {
+    opacity: 0.6;
+    scale: 0.98;
+  }
+  
+  li {
+    flex: 1;
+    background-color: var(--gray-300);
+    padding: 2vh;
+    border-radius: 0.8rem;
+    color: white;
+    transition: all 0.2s;
+    text-align: -webkit-center;
+    place-self: center;
+    width: -webkit-fill-available;
+  }
+  
+  li .header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  li i {
+    font-size: 2.4rem;
+    background-color: #ff0000;
+    color: var(--gray-900);
+    border-radius: 50%;
+    padding: 0.4rem;
+  }
+  
+  li h2 {
+    opacity: 0.9;
+    font-size: 3vh;
+  }
+  
+  li p {
+    margin-top: 1.6rem;
+    opacity: 0.5;
+  }
+  
+  li a {
+    display: table;
+    color: white;
+    margin-top: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+    background: #031795;
+    padding: 1vh;
+    font-size: 2vh;
+    transition: 0.5s all;
+  }
+  
+  li a:hover {
+    color: #ffffff;
+    background: #000000;
+  }
+  
+  @media (max-width: 36rem) {
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  

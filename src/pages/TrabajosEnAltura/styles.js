@@ -53,3 +53,24 @@ export const BotArrow = styled.img`
   margin-top: 5rem;
   cursor: pointer;
 `;
+
+export const ButtonAtras = styled.div`
+width: 7vh;
+height: 10vh;
+/* margin: 0px auto; */
+padding: 2vh 2vh;
+text-align: center;
+background: rgba(3, 23, 149, 0.74);
+position: absolute;
+left: 5vh;
+top: 5vh;
+font-family: Roboto, sans-serif;
+color: rgb(255, 255, 255);
+font-size: 4vh;
+transition: 0.5s all;
+&:hover{
+  color: #ff0000;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+`;

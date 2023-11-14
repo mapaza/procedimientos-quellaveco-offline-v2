@@ -88,6 +88,11 @@ const files = [
    '/applications/imagenes/trabajos-confinados-medida-canula-1.png',
    '/applications/imagenes/trabajos-confinados-medida-canula-2.png',
    '/applications/imagenes/trabajos-confinados-medida-canula-3.png',
+
+   '/applications/imagenes/espacios-menu.png',
+   '/applications/imagenes/caliente-menu.png',
+   '/applications/imagenes/altura-menu.png',
+   '/applications/imagenes/aislamiento-menu.png',
    
    '/applications/styles/buttons copy.css',
    '/applications/styles/buttons.css',

@@ -19,10 +19,7 @@ export default createGlobalStyle`
     padding:0;
     font-family: 'Tomorrow', sans-serif;
     height:100vh;
-  background-image: radial-gradient(
-    50.17% 162.56% at 49.83% 51.19%,
-    #ffffff 0%,
-    #dee9ff 100%
+  background: #ffff;
   );
     display:flex;
     justify-content:center;
