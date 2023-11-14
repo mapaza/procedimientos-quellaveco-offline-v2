@@ -15,7 +15,7 @@ function AislamientoYBloqueo() {
       />
       <Link to="/">
           <ButtonAtras id="btn-volver-menu" style={{display:'none'}} >
-        &#11164;
+          ←
         </ButtonAtras>
       </Link>
    
