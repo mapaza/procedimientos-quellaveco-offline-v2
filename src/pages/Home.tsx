@@ -55,7 +55,7 @@ const Home: React.FC = () => {
   </li>
   </ul>
 </main> */}
-<div className="container">
+{/* <div className="container">
   
   <div className="feature">
     <div className="item item--1">
@@ -105,7 +105,62 @@ const Home: React.FC = () => {
     
   </div>
   
+</div> */}
+<div className="container">
+  
+  <div className="layout">
+  <div className="item">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Aislamiento y Bloqueo</h2>
+    </div>
+      <img src ="applications/imagenes/aislamiento-menu.png" style={{width: '-webkit-fill-available',
+      padding: '3vh 0 0'}}/>
+    <Link to="/aislamiento-y-bloqueo">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+    <div className="item">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Trabajos en Altura</h2>
+    </div>
+      <img src ="applications/imagenes/altura-menu.png" style={{width: '-webkit-fill-available',
+      padding: '3vh 0 0'}}/>
+    <Link to="/trabajos-en-altura">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+  </div>   
+  <div className="layout">
+  <div className="item">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Trabajos en Caliente</h2>
+    </div>
+      <img src ="applications/imagenes/caliente-menu.png" style={{width: '-webkit-fill-available',
+      padding: '3vh 0 0'}}/>
+    <Link to="/trabajos-en-caliente">
+      <div>Ir a Módulo </div>
+    </Link>
+  </div>
+  <div className="item">
+    <div className="header">
+        <i className="ph-graduation-cap"></i>
+        <h2>Trabajos en Espacios Confinados</h2>
+    </div>
+      <img src ="applications/imagenes/espacios-menu.png" style={{width: '-webkit-fill-available',
+      padding: '3vh 0 0'}}/>
+    <Link to="/trabajos-en-espacios-confinados">
+      <div>Ir a Módulo </div>
+    </Link>
+    </div>
+
+
 </div>
+</div>
+
+
 
 
 
