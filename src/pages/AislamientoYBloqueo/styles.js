@@ -76,3 +76,27 @@ transition: 0.5s all;
   cursor: pointer;
 }
 `;
+export const ButtonFinalizar = styled.div`
+position: absolute;
+right: 8vh;
+bottom: 8vh;
+background: #3f51b5;
+color: #fff;
+font-size: 2.5vh;
+padding: 1vh 4vh;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 2px;
+transition: all 0.15s ease-in;
+font-family: 'Roboto',sans-serif;
+width: auto;
+line-height: 4vh;
+&:hover{
+  cursor:pointer;
+  /* background: #ff00005e; */
+  /* color: #484848; */
+  transform: scale(1.1);
+}
+`;

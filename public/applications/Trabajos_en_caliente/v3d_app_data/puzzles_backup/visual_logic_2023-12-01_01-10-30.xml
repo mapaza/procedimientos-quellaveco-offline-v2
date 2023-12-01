@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="69.83553563635235" scrolly="-68.29295840460458" scale="0.41597413196579147">
+  <tab name="init" type="InitTab" active="false" scrollx="153.681606262714" scrolly="-193.48769099170227" scale="0.6145832457482886">
     <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="~S4,^3j*Xi8~eQDUXoJx" disabled="true" x="190" y="130">
       <statement name="DO_END">
         <block type="setHTMLElemStyle" id="-$7k8r,tmJ#ug8;7d+Vg">
@@ -341,7 +341,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="-584.5277267553147" scrolly="-2713.4042856367846" scale="0.5181331799445005">
+  <tab name="main" type="CommonTab" active="true" scrollx="216.41936956227414" scrolly="248.2949912152966" scale="0.5582172371174898">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</variable>
       <variable id=",H:kZfvv9|~YNjXy#ofY">selected</variable>
@@ -5795,7 +5795,7 @@
                               <statement name="DO">
                                 <block type="setHTMLElemStyle" id="md}|+GfKx!OfOrfu/hR[">
                                   <field name="PROPERTY">display</field>
-                                  <field name="PARENT">TRUE</field>
+                                  <field name="PARENT">FALSE</field>
                                   <value name="VALUE">
                                     <block type="text" id="ER*k;cfgd0po~_98+N.]">
                                       <field name="TEXT">flex</field>
@@ -5806,7 +5806,7 @@
                                       <field name="TEXT"></field>
                                     </shadow>
                                     <block type="text" id="fN@7)tXG!;1|JfbhIi:z">
-                                      <field name="TEXT">btn_finalizar</field>
+                                      <field name="TEXT">btn_next_8</field>
                                     </block>
                                   </value>
                                 </block>
@@ -5875,19 +5875,19 @@
                       <next>
                         <block type="eventHTMLElem" id="tC+.!C_:%(/:cP^W17[2">
                           <field name="EVENT">click</field>
-                          <field name="PARENT">TRUE</field>
+                          <field name="PARENT">FALSE</field>
                           <value name="ID">
                             <shadow type="text" id="PF9+~^]+N%Q:=F;/QS}(">
                               <field name="TEXT"></field>
                             </shadow>
                             <block type="text" id="0s$R)ywh$Fz+:=6uM(P,">
-                              <field name="TEXT">btn_finalizar</field>
+                              <field name="TEXT">btn_next_8</field>
                             </block>
                           </value>
                           <statement name="DO">
                             <block type="setHTMLElemStyle" id="D](Oyi;Lf_KJl5S}0I-/">
                               <field name="PROPERTY">display</field>
-                              <field name="PARENT">TRUE</field>
+                              <field name="PARENT">FALSE</field>
                               <value name="VALUE">
                                 <block type="text" id="vlY:PuP9Tn5Q$wxCiS$A">
                                   <field name="TEXT">none</field>
@@ -5898,7 +5898,7 @@
                                   <field name="TEXT"></field>
                                 </shadow>
                                 <block type="text" id=";.aKV]dFkO~Q(9:-papz">
-                                  <field name="TEXT">btn_finalizar</field>
+                                  <field name="TEXT">btn_next_8</field>
                                 </block>
                               </value>
                               <next>
